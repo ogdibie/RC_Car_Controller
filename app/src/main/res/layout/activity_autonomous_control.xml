@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:text="@string/distance"
+        android:textSize="32sp"
+        android:layout_weight="0.12"
+        android:id="@+id/distance_viewer"
+        android:checked="false" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/distance_viewer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="107dp"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:id="@+id/start"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.14" />
+
+        <Button
+            android:layout_width="156dp"
+            android:layout_height="wrap_content"
+            android:text="Stop"
+            android:id="@+id/stop"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.14" />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RC_Car_Controller</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="home_page">LETS CONTROL YOUR CAR</string>
+    <string name="on_screenControltext">USER SCREEN CONTROL</string>
+    <string name="accelerometer_control">ACCELEROMETER CONTROL</string>
+    <string name="autonomous_control">AUTONOMOUS CONTROL</string>
+    <string name="title_activity_control_screen">ControlScreen</string>
+    <string name="default_MAC">10:14:05:22:04:97</string>
+    <string name="distance">DISTANCE</string>
+    <string name="title_activity_autonomous_control">AutonomousControl</string>
+
+</resources>

@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left"
+    android:orientation="vertical"
+    android:weightSum="1"><![CDATA[
+
+    "
+        android:layout_weight="0.12" />
+    ]]>
+
+    <Button
+        android:id="@+id/ScreenControl"
+        android:layout_width="247dp"
+        android:layout_height="wrap_content"
+        android:text="@string/on_screenControltext"
+        android:layout_weight="0.11">
+    </Button>
+    <Button
+        android:id="@+id/AccelerometerControl"
+        android:layout_width="247dp"
+        android:layout_height="wrap_content"
+        android:text="@string/accelerometer_control"
+        android:layout_weight="0.12" />
+
+    <Button
+        android:id="@+id/AutomaticControl"
+        android:layout_width="247dp"
+        android:layout_height="wrap_content"
+        android:text="@string/autonomous_control"
+        android:layout_weight="0.12" />
+
+
+</LinearLayout>
