@@ -17,7 +17,7 @@ public class MainActivity extends ActionBarActivity {
     //defines what the controller controls in its domain
     private Button on_screen_button;
     private Button on_accelerometer_button;
-    private Button on_automatic_button;
+    private Button on_autonomous_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +26,7 @@ public class MainActivity extends ActionBarActivity {
         //connect to the actual widgets
         on_screen_button = (Button) findViewById(R.id.ScreenControl);
         on_accelerometer_button = (Button) findViewById(R.id.AccelerometerControl);
-        on_automatic_button = (Button) findViewById(R.id.AutomaticControl);
+        on_autonomous_button = (Button) findViewById(R.id.AutomaticControl);
 
         on_screen_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,12 +47,14 @@ public class MainActivity extends ActionBarActivity {
             }
         });
 
-        on_automatic_button.setOnClickListener(new View.OnClickListener() {
+        // Starts up the autonomous control intmotion
+        on_autonomous_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),ControlScreen.class);
+                Intent intent = new Intent(getApplicationContext(), AutonomousControl.class);
                 //@todo add the resource from measured distance to the rc car
                 //@todo send the bluetooth control alongside with it
+                startActivity(intent);
             }
         });
 

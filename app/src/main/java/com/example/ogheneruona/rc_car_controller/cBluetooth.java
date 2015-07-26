@@ -49,7 +49,6 @@ public class cBluetooth {
         //If local device is not found
         if (bluetoothAdapter==null){
             this.mHandler.sendEmptyMessage(BL_NOT_AVAILABLE);
-            return;
         }
     }
 
@@ -148,14 +147,13 @@ public class cBluetooth {
             } catch (IOException e2) {
                 Log.d(TAG, "In onPause() and failed to close socket." + e2.getMessage());
                 mHandler.sendEmptyMessage(BL_SOCKET_FAILED);
-                return;
             }
         }
     }
 
     /**
      * Send message to the remote bluetooth with a socket
-     * @param message
+     * @param message Data to be sent to the microcontroller
      */
     public void sendData(String message) {
 
@@ -171,7 +169,6 @@ public class cBluetooth {
             } catch (IOException e) {
                 Log.d(TAG, "In onResume() and an exception occurred during write: " + e.getMessage());
                 mHandler.sendEmptyMessage(BL_SOCKET_FAILED);
-                return;
             }
         } else Log.d(TAG, "Error Send data: outStream is Null");
     }
@@ -199,7 +196,7 @@ public class cBluetooth {
 
         //Main method for the new thread created here
         public void run() {
-            byte[] buffer = new byte[1024];  // buffer store for the stream
+            byte[] buffer = new byte[256];  // buffer store for the stream
             int bytes; // bytes returned from read()
 
             // Keep listening to the InputStream until an exception occurs

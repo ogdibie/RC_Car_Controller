@@ -32,6 +32,7 @@ public class ControlScreen extends ActionBarActivity {
     private static final String BACKWARD = "1";
     private static final String LEFT = "2";
     private static final String RIGHT = "3";
+    private static final String STOP = "5";
 
     //to receiving messages
     private StringBuilder sb = new StringBuilder();

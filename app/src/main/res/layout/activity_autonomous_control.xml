@@ -12,7 +12,7 @@
         android:text="@string/distance"
         android:textSize="32sp"
         android:layout_weight="0.12"
-        android:id="@+id/distance_viewer"
+        android:id="@+id/distance_viewer1"
         android:checked="false" />
 
     <LinearLayout
